@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquiva los Cuadrados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="gameWrapper">
+        <select id="difficultySelect">
+            <option value="easy">Fácil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button id="startButton">Empezar</button>
+        <div id="gameContainer">
+            <div id="player"></div>
+            <div id="score">Puntos: 0</div>
+            <div id="message"></div>
+        </div>
+        <button id="restartButton" style="display: none;">Reiniciar</button>
+        <table id="statsTable">
+            <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Puntuación</th>
+                </tr>
+            </thead>
+            <tbody id="statsBody"></tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
